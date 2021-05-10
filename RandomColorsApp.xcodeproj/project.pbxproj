@@ -19,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		265179F726496C6C000AD020 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		265179FB2649742F000AD020 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2669638E2645705B00A97197 /* RandomColorsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomColorsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		266963912645705B00A97197 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		266963932645705B00A97197 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +45,7 @@
 		266963852645705B00A97197 = {
 			isa = PBXGroup;
 			children = (
+				265179FB2649742F000AD020 /* README.md */,
 				266963902645705B00A97197 /* RandomColorsApp */,
 				2669638F2645705B00A97197 /* Products */,
 			);
