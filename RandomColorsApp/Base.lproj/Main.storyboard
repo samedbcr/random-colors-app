@@ -60,10 +60,25 @@
                     <view key="view" contentMode="scaleToFill" id="Lks-lr-8cT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1C-Dl-TKM">
+                                <rect key="frame" x="174" y="431" width="67" height="34"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="mmn-ob-PYl"/>
-                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="f1C-Dl-TKM" firstAttribute="centerX" secondItem="Lks-lr-8cT" secondAttribute="centerX" id="Vbb-uF-hG5"/>
+                            <constraint firstItem="f1C-Dl-TKM" firstAttribute="centerY" secondItem="Lks-lr-8cT" secondAttribute="centerY" id="pD6-b4-Swc"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="TeP-6c-eer"/>
+                    <connections>
+                        <outlet property="colorHexCodeLabel" destination="f1C-Dl-TKM" id="mCL-tf-vtn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j5U-z6-Bfc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -92,9 +107,6 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
