@@ -61,23 +61,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1C-Dl-TKM">
-                                <rect key="frame" x="174" y="431" width="67" height="34"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OJN-aF-cEM">
+                                <rect key="frame" x="147" y="425" width="120" height="46"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <state key="normal" title="Hex Code"/>
+                                <connections>
+                                    <action selector="hexCodeButtonClicked:" destination="pbd-hZ-u3F" eventType="touchUpInside" id="2go-zx-RIa"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mmn-ob-PYl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="f1C-Dl-TKM" firstAttribute="centerX" secondItem="Lks-lr-8cT" secondAttribute="centerX" id="Vbb-uF-hG5"/>
-                            <constraint firstItem="f1C-Dl-TKM" firstAttribute="centerY" secondItem="Lks-lr-8cT" secondAttribute="centerY" id="pD6-b4-Swc"/>
+                            <constraint firstItem="OJN-aF-cEM" firstAttribute="centerY" secondItem="Lks-lr-8cT" secondAttribute="centerY" id="Wg0-xK-TSr"/>
+                            <constraint firstItem="OJN-aF-cEM" firstAttribute="centerX" secondItem="Lks-lr-8cT" secondAttribute="centerX" id="kqK-2t-EnV"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="TeP-6c-eer"/>
                     <connections>
-                        <outlet property="colorHexCodeLabel" destination="f1C-Dl-TKM" id="mCL-tf-vtn"/>
+                        <outlet property="hexCodeButton" destination="OJN-aF-cEM" id="Yld-DF-8WN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j5U-z6-Bfc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
